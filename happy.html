@@ -940,6 +940,7 @@
               }));
             }
 
+            
             dots[d].s = true;
             dots[d].move(new S.Point({
               x: n.dots[i].x + cx,
@@ -953,6 +954,8 @@
             d++;
           }
 
+
+
           for (var i = d; i < dots.length; i++) {
             if (dots[i].s) {
               dots[i].move(new S.Point({
@@ -960,6 +963,8 @@
                 a: Math.random(),
                 h: 20
               }));
+
+
 
               dots[i].s = false;
               dots[i].e = 0.04;
@@ -974,6 +979,8 @@
           }
         },
 
+
+
         render: function () {
           for (var d = 0; d < dots.length; d++) {
             dots[d].render();
@@ -981,6 +988,7 @@
         }
       }
     }());
+
 
 
     S.init();
